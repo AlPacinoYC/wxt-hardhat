@@ -3,19 +3,22 @@
     "test": "npx hardhat test",
     "deploy": "npx hardhat run scripts/deploy.ts",
     "deploy:all": "npx hardhat run scripts/deployAll.ts --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deployTransfer.ts --network sepolia",
+    "deploy:sepolia:env": "powershell -Command \"$env:PRIVATE_KEY=Read-Host 'Enter private key'; npx hardhat run scripts/deployTransfer.ts --network sepolia\"",
     "node": "npx hardhat node",
     "api": "ts-node api/server.ts",
     "start": "npm-run-all --parallel node api"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "10.9.2",
     "@types/express": "5.0.3",
     "express": "5.1.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "ts-node": "10.9.2",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "hardhat": "^2.19.5"
   }
 }
