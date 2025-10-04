@@ -2,6 +2,7 @@
   "scripts": {
     "test": "npx hardhat test",
     "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:all": "npx hardhat run scripts/deployAll.ts --network localhost",
     "node": "npx hardhat node",
     "api": "ts-node api/server.ts",
     "start": "npm-run-all --parallel node api"

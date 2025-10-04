@@ -38,8 +38,8 @@
       ]
     },
     "D:\\项目\\wxt-hardhat\\contracts\\Transfer.sol": {
-      "lastModificationDate": 1759376038068,
-      "contentHash": "a6d45b8c8ff2a5f3d1ba5fc44004b099",
+      "lastModificationDate": 1759497313033,
+      "contentHash": "6d2797a29c1d43d2706c34b9a5434f28",
       "sourceName": "contracts/Transfer.sol",
       "solcConfig": {
         "version": "0.8.24",
