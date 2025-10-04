@@ -5,15 +5,12 @@ contract Transfer {
     mapping(address => uint256) public balances;
     
     event TransferEvent(address indexed from, address indexed to, uint256 value);
-    event TransferEvent1(address indexed from);
     
     function deposit() public payable {
-        emit TransferEvent1(msg.sender);
         balances[msg.sender] += msg.value;
     }
     
     function transfer(address payable _to, uint256 _amount) public {
-        emit TransferEvent1(msg.sender);
         require(balances[msg.sender] >= _amount, "Insufficient balance");
         
         balances[msg.sender] -= _amount;
